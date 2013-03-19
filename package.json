@@ -1,0 +1,29 @@
+{
+	"name": "jquery.reverse",
+	"version": "1.0.0",
+	"description": "Simple plugin that reverses the results from a jQuery result set.",
+	"homepage": "https://github.com/michael-lawrence/jquery.reverse",
+	"contributors": [
+		"Michael Lawrence <mike@pandemicode.com> (http://pandemicode.com/)"
+	],
+	"keywords": [
+		"jquery",
+		"svg",
+		"image",
+		"fallback"
+	],
+	"main": "./jquery.reverse",
+	"dependencies": {
+		"jquery" : "*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/michael-lawrence/jquery.reverse.git"
+	},
+	"bugs": {
+		"url": "https://github.com/michael-lawrence/jquery.reverse/issues"
+	},
+	"licenses" : [
+		{ "type" : "MIT" }
+	]
+}
