@@ -12,7 +12,7 @@
 
 		exports[plugin.name] = plugin.fn;
 	} else if (typeof define === 'function' && define.amd) { // AMD
-		define(plugin.deps, function ($) {
+		define(['jquery'], function ($) {
 			var fn = (plugin.isStatic ? $ : $.fn)[plugin.name] = plugin.factory($);
 			return fn;
 		});
@@ -27,7 +27,6 @@
 })(window.$, {
 	'name' : 'reverse',
 	'isStatic' : false,
-	'deps' : ['jquery'],
 	'factory' : function ($) {
 		return function () {
 			return [].reverse;
